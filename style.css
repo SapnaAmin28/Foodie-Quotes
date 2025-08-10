@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fffaf0;
+    color: #333;
+  }
+  
+  .header {
+    text-align: center;
+    background: #ff7043;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .quote-card {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.5s ease;
+  }
+  
+  .image-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .quote-content {
+    padding: 1rem;
+  }
+  
+  blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  cite {
+    display: block;
+    margin-bottom: 1rem;
+    color: #777;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #ff7043;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn.outline {
+    background: white;
+    color: #ff7043;
+    border: 1px solid #ff7043;
+  }
+  
+  /* Tablet */
+  @media (max-width: 768px) {
+    blockquote {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 480px) {
+    .quote-card {
+      margin: 1rem;
+    }
+  
+    .controls {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  
+  /* Background Themes */
+  .theme-pancake { background-color: #fff3e0; }  /* light orange */
+  .theme-burger { background-color: #ffe0b2; }   /* warm orange */
+  .theme-salad { background-color: #e8f5e9; }    /* light green */
+  .theme-cake { background-color: #fce4ec; }     /* pink */
+  .theme-coffee { background-color: #efebe9; }   /* coffee beige */
+  
